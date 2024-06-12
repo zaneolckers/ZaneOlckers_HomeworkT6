@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url('../Assests/Header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}

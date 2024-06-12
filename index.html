@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Eating</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Healthy Eating</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recipe">Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light text-center py-5">
+        <h1>Healthy Eating</h1>
+        <p>Embrace a healthy lifestyle with nutritious food choices</p>
+    </header>
+
+    <section id="tips" class="container my-5">
+        <h2 class="text-center">Healthy Eating Tips</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Eat a variety of foods</li>
+            <li class="list-group-item">Include plenty of fruits and vegetables</li>
+            <li class="list-group-item">Stay hydrated with water</li>
+            <li class="list-group-item">Limit sugar and salt intake</li>
+            <li class="list-group-item">Choose whole grains over refined grains</li>
+        </ul>
+    </section>
+
+    <section id="recipe" class="container my-5">
+        <h2 class="text-center">Recipe of the Day</h2>
+        <div class="card">
+            <img src="Assests/Salad.jpg" class="card-img-top" alt="Recipe Image" height="900px">
+            <div class="card-body">
+                <h5 class="card-title" id="recipeTitle">Quinoa Salad</h5>
+                <p class="card-text" id="recipeDescription">A healthy and delicious quinoa salad with fresh vegetables and a tangy dressing.</p>
+                <button class="btn btn-success" onclick="changeRecipe()">Show Another Recipe</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5 bg-light pt-3 pb-3">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="button" class="btn btn-success" onclick="submitForm()">Submit</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-center text-light py-3">
+        Healthy Eating &copy; 2024
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
